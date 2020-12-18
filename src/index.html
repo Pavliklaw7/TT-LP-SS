@@ -7,7 +7,41 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__wrapper">
+        <h3 class="header__logo">LOGO</h3>
+        <div class="language header__language">
+          <input
+            type="radio"
+            class="language__radio"
+            id="set-language-UA"
+            name="set-language"
+            value="UA"
+            title="Switch to Ukrainian?"
+          >
+          <label for="set-language-UA" class="language__label">UA</label>
+          <input
+            type="radio"
+            class="language__radio"
+            id="set-language-RU"
+            name="set-language"
+            value="UA"
+            title="Switch to Russian?"
+          >
+          <label for="set-language-RU" class="language__label">RU</label>
+          <input
+            type="radio"
+            class="language__radio"
+            id="set-language-EN"
+            name="set-language"
+            value="EN"
+            checked
+            title="Switch to English?"
+          >
+          <label for="set-language-EN" class="language__label">EN</label>
+        </div>
+      </div>
+    </header>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
