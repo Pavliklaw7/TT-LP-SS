@@ -1,0 +1,21 @@
+.header {
+  background-color: #fff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    padding-right: 10rem;
+    height: 96px;
+    background-color: $header-wrapper-bgcolor;
+  }
+
+  &__logo {
+    font-size: 4rem;
+    color: $font-color-dark;
+  }
+
+  &__language {
+    font-size: 1.4rem;
+  }
+}
