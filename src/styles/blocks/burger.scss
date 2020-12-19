@@ -1,0 +1,125 @@
+.burger {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 100px;
+  top: -25px;
+  margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+
+  &__dot {
+    display: block;
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: $font-color-dark;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  &__dot:nth-child(even) {
+    left: 50%;
+  }
+
+  &__dot:nth-child(odd) {
+    left: 0px;
+  }
+
+  &__dot:nth-child(1),
+  &__dot:nth-child(2),
+  &__dot:nth-child(3) {
+    top: 0px;
+  }
+
+  &__dot:nth-child(4),
+  &__dot:nth-child(5),
+  &__dot:nth-child(6) {
+    top: 20px;
+  }
+
+  &__dot:nth-child(7),
+  &__dot:nth-child(8),
+  &__dot:nth-child(9) {
+    top: 40px;
+  }
+
+  &__dot:nth-child(3) {
+    left: 100%;
+  }
+
+  &__dot:nth-child(6) {
+    left: 100%;
+  }
+
+  &__dot:nth-child(9) {
+    left: 100%;
+  }
+
+  &.open &__dot:nth-child(1) {
+    width: 45px;
+    transform: rotate(45deg);
+    left: -9px;
+    border-radius: 50px;
+    top: 5px;
+  }
+
+  &.open &__dot:nth-child(2) {
+    top: -20px;
+  }
+
+  &.open &__dot:nth-child(3) {
+    width: 45px;
+    transform: rotate(-45deg);
+    border-radius: 50px;
+    left: 45%;
+    top: 5px;
+  }
+
+  &.open &__dot:nth-child(4) {
+    left: 150%;
+  }
+
+  &.open &__dot:nth-child(5) {
+    left: 50%;
+  }
+
+  &.open &__dot:nth-child(6) {
+    left: -50%;
+  }
+
+  &.open &__dot:nth-child(7) {
+    width: 45px;
+    transform: rotate(-45deg);
+    left: -9px;
+    border-radius: 50px;
+    top: 35px;
+  }
+
+  &.open &__dot:nth-child(8) {
+    top: 60px;
+  }
+
+  &.open &__dot:nth-child(9) {
+    width: 45px;
+    transform: rotate(45deg);
+    border-radius: 50px;
+    left: 45%;
+    top: 35px;
+  }
+}

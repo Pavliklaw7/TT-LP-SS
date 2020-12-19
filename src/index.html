@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./styles/styles.scss">
+    <script src="https://kit.fontawesome.com/8136b79ed3.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
@@ -41,7 +42,71 @@
           <label for="set-language-EN" class="language__label">EN</label>
         </div>
       </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Головна</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Про компанію</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Варіанти придбання</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Варіанти інвестування</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Новини</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Документи</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Контакти</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Співробітництво</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="burger" class="burger">
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+        <span class="burger__dot"></span>
+      </div>
     </header>
+    <main class="main">
+      <a href="#" class="link main__link">
+        <div class="link__title">
+          ПРО КОМПАНІЮ
+        </div>
+        <div class="link__button"></div>
+      </a>
+      <div class="about main__about">
+        <h2 class="about__title">
+          Надійний
+          забудовник
+        </h2>
+        <p class="about__text">
+          – это 7 лет успешной работы на украинском рынке. Более 700 квартир уже продано, а в планах компании построить 120 тыс. метров жилой площади.
+        </p>
+      </div>
+      <div class="slider main__slider">
+        <div class="slider__wrapper">Slider</div>
+        <img
+          src="./images/Rectangle 207.png"
+          alt="slider background image"
+          class="slider__background-image"
+        >
+      </div>
+    </main>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

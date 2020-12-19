@@ -1,0 +1,19 @@
+.link {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 300;
+    padding: 2rem 3.2rem;
+    height: 100%;
+    background-color: $font-color-dark;
+  }
+
+  &__button {
+    max-height: 100%;
+    width: 100px;
+    background-color: $font-color-dark;
+  }
+}
