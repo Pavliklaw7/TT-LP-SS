@@ -38,13 +38,13 @@
   }
 
   &__dot:nth-child(odd) {
-    left: 0px;
+    left: 0;
   }
 
   &__dot:nth-child(1),
   &__dot:nth-child(2),
   &__dot:nth-child(3) {
-    top: 0px;
+    top: 0;
   }
 
   &__dot:nth-child(4),

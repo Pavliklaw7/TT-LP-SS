@@ -14,13 +14,65 @@
       height: 100%;
       top: 0;
       left: 0;
-      z-index: 1;
-      background-color: $font-color-dark;
+      z-index: 0;
+      background-color: $bg-color-dark;
       transform-origin: bottom right;
       -ms-transform: skew(-30deg, 0deg);
       -webkit-transform: skew(-30deg, 0deg);
       transform: skew(-10deg, 0deg);
     }
+  }
+
+  &__switcher {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin: 5.6rem;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &__number {
+    font-size: 2.5rem;
+    color: #fff;
+    opacity: 0.25;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .slider__number {
+      color: $font-color-light;
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    &-item {
+      position: relative;
+      z-index: 1;
+      display: none;
+      flex-direction: column;
+      margin-top: 7rem;
+      margin-left: 5.6rem;
+      font-size: 3rem;
+      color: $font-color-light;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10%;
+    font-size: 3.7rem;
+  }
+
+  &__text {
+    font-size: 2.1rem;
+    line-height: 3rem;
+    opacity: 0.75;
   }
 
   &__background-image {

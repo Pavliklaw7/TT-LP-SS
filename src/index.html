@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>LOGO</title>
+    </link>
     <link rel="stylesheet" href="./styles/styles.scss">
-    <script src="https://kit.fontawesome.com/8136b79ed3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -87,7 +88,13 @@
         <div class="link__title">
           ПРО КОМПАНІЮ
         </div>
-        <div class="link__button"></div>
+        <div class="link__button">
+          <img
+            src="./images/Vector 11.svg"
+            alt="link arrow"
+            class="link__arrow"
+          >
+        </div>
       </a>
       <div class="about main__about">
         <h2 class="about__title">
@@ -99,7 +106,73 @@
         </p>
       </div>
       <div class="slider main__slider">
-        <div class="slider__wrapper">Slider</div>
+        <div class="slider__wrapper">
+          <div class="slider__switcher">
+            <div class="slider__switcher-item">
+              <input
+              id="slider-btn-1"
+              type="radio"
+              name="slider-btn"
+              class="slider__input"
+              >
+              <label for="slider-btn-1" class="slider__number">01</label>
+            </div>
+            <div class="slider__switcher-item">
+              <input
+                id="slider-btn-2"
+                type="radio"
+                name="slider-btn"
+                class="slider__input"
+                checked
+              >
+              <label for="slider-btn-2" class="slider__number">02</label>
+            </div>
+            <div class="slider__switcher-item">
+              <input
+                id="slider-btn-3"
+                type="radio"
+                name="slider-btn"
+                class="slider__input"
+              >
+              <label for="slider-btn-3" class="slider__number">03</label>
+            </div>
+            <div class="slider__switcher-item">
+              <input
+                id="slider-btn-4"
+                type="radio"
+                name="slider-btn"
+                class="slider__input"
+              >
+              <label for="slider-btn-4" class="slider__number">04</label>
+            </div>
+          </div>
+          <div class="slider__content">
+            <div id="slider-content-1" class="slider__content-item">
+              <h4 class="slider__title">Акційна пропозиція №1</h4>
+              <p class="slider__text">
+                Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском рынке.
+              </p>
+            </div>
+            <div id="slider-content-2" class="slider__content-item">
+              <h4 class="slider__title">Акційна пропозиція №2</h4>
+              <p class="slider__text">
+                Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском рынке.
+              </p>
+            </div>
+            <div id="slider-content-3" class="slider__content-item">
+              <h4 class="slider__title">Акційна пропозиція №3</h4>
+              <p class="slider__text">
+                Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском рынке.
+              </p>
+            </div>
+            <div id="slider-content-4" class="slider__content-item">
+              <h4 class="slider__title">Акційна пропозиція №4</h4>
+              <p class="slider__text">
+                Забудовник – это 5 лет успешной работы на украинском рынке. Успешной работы на украинском рынке.
+              </p>
+            </div>
+          </div>
+        </div>
         <img
           src="./images/Rectangle 207.png"
           alt="slider background image"
@@ -107,6 +180,8 @@
         >
       </div>
     </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/8136b79ed3.js" crossorigin="anonymous"></script>
   </body>
 </html>
