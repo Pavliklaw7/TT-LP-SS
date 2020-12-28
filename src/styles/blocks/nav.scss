@@ -1,3 +1,36 @@
 .nav {
-  display: none;
+  background-color: #fff;
+
+  &__list {
+    list-style: none;
+    margin-top: 10rem;
+    margin-left: 4rem;
+
+    @media (max-width: 1400px) {
+      margin-left: 2rem;
+    }
+
+    &-item {
+      font-size: 3rem;
+      color: $font-color-dark;
+      opacity: 0.2;
+      transition: opacity 0.3s ease;
+
+      @media (max-width: 1400px) {
+        font-size: 2rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }

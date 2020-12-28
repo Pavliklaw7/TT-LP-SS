@@ -3,8 +3,21 @@
 
   &__wrapper {
     position: relative;
-    width: 100%;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
     background-color: $font-color-dark;
+
+    @media (max-width: 1700px) {
+      padding-left: 3rem;
+    }
+
+    @media (max-width: 800px) {
+      padding-right: 3rem;
+    }
+
+    @media (max-width: 430px) {
+      padding-left: 2rem;
+    }
 
     &::after {
       content: " ";
@@ -14,17 +27,103 @@
       height: 100%;
       top: 0;
       left: 0;
-      z-index: 1;
-      background-color: $font-color-dark;
+      z-index: 0;
+      background-color: $bg-color-dark;
       transform-origin: bottom right;
       -ms-transform: skew(-30deg, 0deg);
       -webkit-transform: skew(-30deg, 0deg);
       transform: skew(-10deg, 0deg);
+
+      @media (max-width: 595px) {
+        display: none;
+      }
+    }
+  }
+
+  &__switcher {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-bottom: 3rem;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 5%;
+      }
+    }
+
+    @media (max-width: 1400px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__number {
+    font-size: 25%;
+    color: #fff;
+    opacity: 0.25;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + .slider__number {
+      color: $font-color-light;
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    &-item {
+      display: none;
+      flex-direction: column;
+      font-size: 30%;
+      color: $font-color-light;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 130%;
+
+    @media (max-width: 1400px) {
+      font-size: 100%;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-height: 1000px) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__text {
+    font-size: 80%;
+    line-height: 3rem;
+    opacity: 0.75;
+
+    @media (max-width: 1100px) {
+      line-height: 2rem;
+    }
+
+    @media (max-height: 1000px) {
+      margin-bottom: 1rem;
+      line-height: 2rem;
     }
   }
 
   &__background-image {
+    align-self: flex-end;
     object-fit: cover;
-    width: 100%;
+    height: 100%;
+
+    @media (max-width: 1400px) {
+      width: 45%;
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 }
