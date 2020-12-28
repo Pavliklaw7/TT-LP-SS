@@ -3,15 +3,36 @@
   background-color: $general-light-color;
   color: $font-color-dark;
 
+  @media (max-width: 2200px) {
+    padding: 5rem 5rem;
+  }
+
+  @media (max-width: 430px) {
+    padding: 3rem 2rem;
+  }
+
   &__title {
-    font-size: 8rem;
-    width: 80%;
+    font-size: 80%;
+    width: 70%;
     margin-bottom: 4rem;
+
+    @media (max-width: 1400px) {
+      line-height: 5rem;
+    }
   }
 
   &__text {
-    font-size: 3rem;
+    font-size: 30%;
     margin-bottom: 5rem;
     line-height: 5rem;
+
+    @media (max-width: 2200px) {
+      line-height: 4rem;
+    }
+
+    @media (max-width: 1700px) {
+      margin-bottom: 0;
+      line-height: 2rem;
+    }
   }
 }
