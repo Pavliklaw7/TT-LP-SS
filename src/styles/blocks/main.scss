@@ -1,7 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, minmax(1fr 100px));
   background-image: url(./../images/intro_img.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -95,7 +95,6 @@
   &__slider {
     grid-column: 2;
     grid-row: 4;
-    max-height: 200px;
 
     @media (max-width: 595px) {
       grid-column: 1;

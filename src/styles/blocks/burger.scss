@@ -106,7 +106,7 @@
     }
 
     &:nth-child(even) {
-      height: 0.4rem;
+      height: 0.7rem;
     }
   }
 
@@ -170,7 +170,7 @@
   }
 
   &.open &__dot:nth-child(4) {
-    left: 153%;
+    left: 144%;
 
     @media (max-width: 1400px) {
       top: 17px;
