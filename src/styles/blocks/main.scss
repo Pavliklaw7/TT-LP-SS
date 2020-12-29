@@ -1,7 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, minmax(1fr 100px));
+  grid-template-rows: repeat(4, 1fr);
   background-image: url(./../images/intro_img.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -25,7 +25,7 @@
     font-size: 6rem;
   }
 
-  @media (max-width: 1400px) {
+  @media (max-width: px) {
     height: 93%;
   }
 
