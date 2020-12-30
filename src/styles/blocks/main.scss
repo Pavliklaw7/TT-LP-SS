@@ -25,7 +25,7 @@
     font-size: 6rem;
   }
 
-  @media (max-width: px) {
+  @media (max-width: 1400px) {
     height: 93%;
   }
 
@@ -35,6 +35,11 @@
 
   @media (max-width: 595px) {
     grid-template-columns: 1fr;
+  }
+
+  @media (max-height: 690px) {
+    font-size: 4rem;
+    height: 87%;
   }
 
   &__wrapper {
@@ -61,7 +66,7 @@
       grid-row: 4;
       align-self: center;
       justify-self: stretch;
-      margin: 0 6.5rem 0 2rem;
+      margin: 0 3rem 0 2rem;
     }
   }
 
@@ -89,6 +94,10 @@
       grid-column: 1;
       grid-row: 3;
       margin: 0 2rem;
+    }
+
+    @media (max-height: 520px) {
+      margin-left: 1rem;
     }
   }
 

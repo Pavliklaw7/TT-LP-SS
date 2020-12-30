@@ -1,41 +1,59 @@
 .link {
   display: flex;
-  color: #fff;
   text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+
+    & .link__title {
+      color: $font-color-dark;
+
+      &:before {
+        transform: scaleX(1);
+        transform-origin: center left;
+      }
+    }
+  }
 
   &__title {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     font-size: 20%;
     font-weight: 300;
-    padding: 2.5rem 0 2.5rem 3.5rem;
+    padding: 2.5rem;
     width: 100%;
+    color: #fff;
     background-color: $font-color-dark;
+    -webkit-clip-path: polygon(0 0, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
 
-    @media (max-width: 1400px) {
-      padding: 1.5rem 0 1.5rem 2.5rem;
+    @media (max-height: 820px) {
+      clip-path: polygon(0 0, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
     }
 
-    &::after {
-      content: " ";
+    @media (max-height: 520px) {
+      grid-template-columns: 1fr;
+    }
+
+    &::before {
+      content: "";
       position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
       top: 0;
-      left: 2;
+      right: 0;
+      bottom: 0;
+      left: 0;
       z-index: -1;
-      background-color: $bg-color-dark;
-      transform-origin: bottom right;
-      -ms-transform: skew(-30deg, 0deg);
-      -webkit-transform: skew(-30deg, 0deg);
-      transform: skew(-10deg, 0deg);
+      transform: scaleX(0);
+      transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transform-origin: center right;
+      background-color: $font-color-light;
     }
   }
 
   &__button {
     position: relative;
-    left: 57px;
+    left: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,9 +61,8 @@
     width: 70px;
     background-color: $bg-color-dark;
 
-    @media (max-width: 1400px) {
-      left: 47px;
-      width: 35px;
+    @media (max-height: 520px) {
+      width: 40px;
     }
 
     &::before {

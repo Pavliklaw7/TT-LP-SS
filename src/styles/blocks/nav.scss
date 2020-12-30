@@ -10,6 +10,14 @@
       margin-left: 2rem;
     }
 
+    @media (max-height: 720px) {
+      margin-top: 2rem;
+    }
+
+    @media (max-height: 380px) {
+      margin-top: 1rem;
+    }
+
     &-item {
       font-size: 3rem;
       color: $font-color-dark;
@@ -22,6 +30,14 @@
 
       &:not(:last-child) {
         margin-bottom: 3rem;
+
+        @media (max-height: 510px) {
+          margin-bottom: 1.5rem;
+        }
+
+        @media (max-height: 380px) {
+          margin-bottom: 1rem;
+        }
       }
 
       &:hover {

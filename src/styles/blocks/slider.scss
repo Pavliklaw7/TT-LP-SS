@@ -23,6 +23,11 @@
       padding-left: 2rem;
     }
 
+    @media (max-height: 520px) {
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+    }
+
     &::after {
       content: " ";
       position: absolute;
@@ -103,6 +108,10 @@
     @media (max-height: 1000px) {
       margin-bottom: 2rem;
     }
+
+    @media (max-height: 520px) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__text {
@@ -129,7 +138,7 @@
       width: 45%;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 900px) {
       display: none;
     }
   }

@@ -9,6 +9,10 @@
     height: 7%;
   }
 
+  @media (max-height: 690px) {
+    height: 13%;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
